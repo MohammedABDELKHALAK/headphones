@@ -1,0 +1,189 @@
+/* this to remove that small magin appears in the project */
+body{
+    margin: 0;
+    /* flex-direction: column; */
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 800px;
+    background-image: url("images/headphones_hero_1.jpg");
+    
+}
+
+/********** for header container **********/
+.header-logo-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* display: flex; */
+    justify-content: space-around;
+  
+}
+
+.header-logo{
+    /* background-color: aqua; */
+    margin-top: 10px;
+}
+
+.header-menu{  
+    /* background-color: aqua; */
+    align-self:center;
+   
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+   
+}
+
+ul li{
+
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ul li a{
+    color:azure;
+    text-decoration: none;
+    font-family:  sans-serif;
+    font-size: 25px;
+}
+
+ul li a:hover{
+    color: #FF6565;
+}
+ul li a:active{
+    color: #FF6565;
+}
+
+/* *************************************** */
+
+/********** for header text container **********/
+
+/* .header-text-container{
+
+} */
+
+.header-text-container{
+    /* background-color: #FF6565; */
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ header  h1{
+    /* background-color: rgb(43, 136, 217); */
+    color:azure;
+    align-items: center;
+    float: center;
+    text-align: center;
+ }
+
+header  h5{
+    text-align: center;
+    color:azure;
+    margin-top: -2%;
+}
+
+header button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #FF6565;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+
+}
+
+header button:hover{
+    opacity: 0.9;
+}
+
+header button:active{
+    opacity: 0.9;
+}
+
+header  p{
+    text-align: center;
+    color:azure;
+    margin-top: 10%;
+}
+
+/* Positioning and margins */
+
+/* @media (min-width: 480px ) {
+	body {
+		width: 480px ;
+		margin: 0 auto;
+	}
+} */
+
+@media (max-width: 680px) {
+    body {
+        display: block;
+    }
+     header {
+        display: flex;
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+        background-position: center center;
+     
+    }
+    header .header-logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .header-menu{
+        margin-top: 15px;
+    }
+    .header-logo img{
+        margin-top: 15px;
+    }
+ 
+  }
+
+  @media (max-width: 350px) {
+    header {
+        display: flex;
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+        background-position: center center;
+     
+    }
+    header .header-logo-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    .header-menu ul{
+
+        display: flex;
+        flex-direction: column;
+         margin-top: -3px;
+    }
+
+    .header-menu ul li{
+         margin-top: 15px;
+    }
+
+    .header-logo img{
+        width: 250px;
+    }
+  }
+
+
